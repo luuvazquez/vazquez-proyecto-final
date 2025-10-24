@@ -1,0 +1,781 @@
+  body {
+      background: #f9f9f9;
+      margin: 0;
+      padding: 0;
+      color: #333;
+ }
+
+
+    /* === HEADER === */
+    .header {
+      text-align: center;
+      padding: 40px 20px 20px;
+    }
+
+    .header h1 {
+      margin-bottom: 10px;
+      font-size: 24px;
+      color: #020202;
+    }
+
+    .header p {
+      font-size: 14px;
+      color: #555;
+    }
+
+.mapa-texto{
+  margin: 15px 0px;
+
+}
+
+.primer-section p{
+  margin: 0px 0px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+    .p-index{
+      padding-top: 15px;
+      padding-bottom: 15px;
+        padding-left: 15px;
+  padding-right: 15px;
+    }
+
+    /* === MAPA === */
+
+    .map {
+      flex: 2;
+      background: url('https://via.placeholder.com/400x300?text=Mapa') no-repeat center/cover;
+      min-height: 250px;
+      border-radius: 8px;
+    }
+
+
+
+    /* === NOVEDADES === */
+    .novedades {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    .novedades h2 {
+      background: #c084fc;
+      color: black;
+      font-size: 14px;
+      font-weight: bold;
+      display: inline-block;
+      padding: 5px 15px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #bdbcf3;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 15px;
+      font-size: 13px;
+      color: #444;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+
+    .footer {
+  background-color: #d3dbe3;
+  padding: 20px;
+  text-align: center;
+  border-top: 1px solid #ccc;
+  font-family: Arial, sans-serif;
+}
+
+.footer h3 {
+  margin-bottom: 20px;
+  color: #1a3e2f;
+}
+
+.social-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.social-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: #2b2b2b;
+}
+
+.social-item img {
+  width: 24px;
+  height: 24px;
+}
+
+.social-grid a{
+  text-decoration: none;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .social-grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*COMIDAS*/
+
+    h2 {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 26px;
+      color: #222;
+    }
+
+    p.subtitulo {
+      text-align: center;
+      color: #555;
+      margin-bottom: 30px;
+    }
+
+    .contenedor {
+      width: 90%;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    /* 👉 cada sección será un bloque */
+    .seccion {
+      background: #fff;
+      padding: 20px;
+      margin-bottom: 30px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+
+      /* flex para que se acomoden al lado */
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .seccion h3 {
+      flex-basis: 100%; /* ocupa fila entera arriba */
+      text-align: center;
+      margin-bottom: 15px;
+      font-size: 20px;
+      color: #333;
+    }
+
+    /* Tarjetas dentro de cada sección */
+    .card {
+      flex: 1; /* que se repartan espacio */
+      background: #f1f1f1;
+      border-radius: 10px;
+      padding: 15px;
+      text-align: center;
+      border: 1px solid #ddd;
+    }
+
+    .card img {
+      width: 100%;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 10px;
+      background: #ccc;
+    }
+
+    .card h4 {
+      margin: 10px 0;
+      font-size: 16px;
+      color: #222;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #555;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /*HISTORIA*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif; }
+
+.slider-box { 
+    width: 100%;
+    max-width: 1280px;
+    margin: 50px auto 0;
+    overflow: hidden;
+}
+
+.slider.box ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: slide 15s infinite alternate ease-in-out;
+}
+
+.slider.box li {
+    width: 100%;
+    list-style: none;
+    position: relative;
+}
+
+.texto {
+    position: absolute;
+    text-align: center;
+    padding: 0 250px;
+    top: 250px;
+    color: black;
+}
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
+    }
+
+    h2 {
+      text-align: center;
+      margin: 30px 0 10px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .card {
+      background: rgb(112, 83, 83);
+      border: 1px solid #ddd;
+      border-radius: 30px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      padding: 40px;
+      text-align: center;
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card h3 {
+      color: #7a1fa2; /* Violeta */
+      font-size: 16px;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #444;
+    }
+
+     /* ==== MAPA Y REFERENCIAS ==== */
+    .map-section {
+      height: 60%;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 20px;
+      padding: 30px;
+      max-width: 1200px;
+      margin: auto;
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+    }
+
+        .map-section-historia {
+    
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 20px;
+      padding: 50px;
+      max-width: 1200px;
+      margin: auto;
+      background-color: rgb(205, 207, 216);
+      border: 1px solid #ddd;
+      border-radius: 10px;
+    }
+
+    .map {
+      flex: 2;
+  
+      min-height: 250px;
+      border-radius: 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #555;
+      font-weight: bold;
+    }
+
+    .map-index{
+      background-color: rgb(205, 207, 216);
+      display: flex;
+      justify-content: center;
+      padding: 20px 0px;
+    }
+
+    .mapa-texto{
+      margin: 40px 0;
+    }
+
+    .references {
+      flex: 1;
+      padding: 15px;
+    }
+
+    .references h3 {
+      text-align: center;
+      margin-bottom: 15px;
+      color: #7a1fa2;
+    }
+
+    .references ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .references li {
+      margin: 8px 0;
+      font-size: 14px;
+    }
+
+    /* ==== RECOMENDACIÓN ==== */
+    .apps-section {
+      margin: 40px auto;
+      max-width: 1200px;
+      background: rgb(205, 207, 216);
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 20px;
+    }
+
+    .apps-section h3 {
+      text-align: center;
+      font-size: 15px;
+      margin-bottom: 20px;
+    }
+
+    .app {
+      display: flex;
+      align-items: center;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 15px;
+      margin-bottom: 15px;
+      background: #fafafa;
+    }
+
+    .app img {
+      width: 50px;
+      height: 50px;
+      margin-right: 15px;
+    }
+
+    .app p {
+      font-size: 14px;
+      margin: 0;
+    }
+
+    .app a {
+      color: #3366cc;
+      font-size: 13px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 5px;
+    }
+
+    .app a:hover {
+      text-decoration: underline;
+    }
+
+      /* ==== CARROUSEL ==== */
+    .carousel-container {
+  width: 100%;
+  max-width: 900px;
+  margin: 20px auto;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.3);
+  position: relative;
+}
+
+.carousel-slide {
+  display: flex;
+  width: 100%;  
+  animation: slide 45s infinite;
+}
+
+.carousel-slide img {
+  width: 100%;
+  max-height: 300px; 
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+/* 15s cada una) */
+@keyframes slide {
+  0%, 30% { transform: translateX(0%); }
+
+  33%, 63% { transform: translateX(-100%); }
+
+  66%, 96% { transform: translateX(-200%); }
+
+  100% { transform: translateX(0%); }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*SERVICIOS*/
+body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5fc;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      text-align: center;
+      color: #1a3e2f;
+    }
+
+    .subtitle {
+      text-align: center;
+      font-style: italic;
+      margin-bottom: 30px;
+    }
+
+    .section {
+      background-color: #e6e3fa;
+      border: 1px solid #ccc;
+      padding: 20px;
+      margin-bottom: 30px;
+    }
+
+    .section-title {
+      background-color: #c3c0e3;
+      color: #1a3e2f;
+      font-weight: bold;
+      padding: 10px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .card-grid {
+      display: flex;
+      justify-content: space-around;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background-color: white;
+      border: 1px solid #ccc;
+      width: 45%;
+      padding: 15px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-header {
+      background-color: #d8d8ef;
+      text-align: center;
+      padding: 8px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .card-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .card img {
+      width: 80px;
+      height: 80px;
+      background-color: #ccc;
+      margin-right: 10px;
+    }
+
+    .map {
+      width: 80px;
+      height: 80px;
+      background-color: #e0e0e0;
+      margin-left: 10px;
+    }
+
+    .description {
+      flex: 1;
+      font-size: 0.9rem;
+      padding: 0 10px;
+    }
+
+      .card {
+        width: 100%;
+      }
+
+      .card-content {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .description {
+        padding: 10px 0;
+        text-align: center;
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      /*NATURALEZA*/
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      font-family: "Merriweather", serif;
+      text-align: center;
+      color: #000000;
+      padding: 15px 0px;
+    }
+
+    .subtitle {
+      text-align: center;
+      font-style: italic;
+      margin-bottom: 40px;
+    }
+
+    .card {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: white;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-left: 5px solid #69c4a8;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .card img {
+      width: 80px;
+      height: 80px;
+      background-color: #ccc;
+      display: block;
+      margin-right: 20px;
+    }
+
+    .card-content {
+      flex: 1;
+      margin-right: 20px;
+    }
+
+    .card-map {
+      width: 100px;
+      height: 100px;
+      background-color: #d8f0ea;
+    }
+
+    .card-header {
+      background-color: #d8f0ea;
+      padding: 5px 10px;
+      font-weight: bold;
+      font-size: 0.9rem;
+      margin-bottom: 10px;
+      color: #1a3e2f;
+    }
+
+    .navigation {
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    .navigation button {
+      background-color: #1a3e2f;
+      color: white;
+      border: none;
+      padding: 8px 12px;
+      margin: 0 5px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+     .logo {
+  width: 60px;
+ }
+
+   nav {
+  background-color: #bdbcf3; 
+  padding: 20px 0;
+ }
+
+.navbar {
+  width: 100%;
+}
+
+.lista {
+  display: flex;                 
+  justify-content: space-evenly; 
+  align-items: center;          
+  list-style: none;            
+  margin: 0;
+  padding: 0;
+}
+
+.lista li a {
+  text-decoration: none;       
+  color: #333;               
+  font-weight: bold;
+  font-family: sans-serif;
+  transition: color 0.3s ease; 
+}
+
+.lista li a:hover {
+  color: #007bff;        
+}
+
+.first{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  
+}
+
+.nombre{
+  font-family: "Bitcount Grid Single", system-ui;
+    font-optical-sizing: auto;
+
+}
+
+.header-redes {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.logo-redes img {
+  transition: transform 0.2s ease;
+}
+
+.logo-redes img:hover {
+  transform: scale(1.2);
+}
+
+
+
+
+
+    :root {
+  color-scheme: light;
+}
+
+html, body {
+  background-color: #cecdfa; 
+  color: #000000;           
+  margin: 0;
+  padding: 0;
+  filter: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: light;
+  }
+
+  html, body {
+    background-color: #cecdfa;
+    color: #000000;
+    filter: none;
+  }
+}
