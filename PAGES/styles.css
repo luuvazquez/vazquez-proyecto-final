@@ -363,7 +363,9 @@
       background-color: rgb(205, 207, 216);
       display: flex;
       justify-content: center;
-      padding: 20px 0px;
+      padding: 20px 40px;
+      margin-left: 100px;
+      margin-right: 100px;
     }
 
     .mapa-texto{
@@ -454,7 +456,7 @@
 .carousel-slide {
   display: flex;
   width: 100%;  
-  animation: slide 45s infinite;
+  animation: slide 25s infinite;
 }
 
 .carousel-slide img {
@@ -659,12 +661,14 @@ body {
       margin-right: 20px;
     }
 
-    .card-map {
-      width: 100px;
-      height: 100px;
+    .card-info {
+      width: 150px;
+      height: 150px;
       background-color: #d8f0ea;
+      display: flex;
+      align-items: center;
     }
-
+    
     .card-header {
       background-color: #d8f0ea;
       padding: 5px 10px;
@@ -673,6 +677,14 @@ body {
       margin-bottom: 10px;
       color: #1a3e2f;
     }
+    
+    .img-naturaleza {
+  height: auto; 
+  border-radius: 10px; 
+  object-fit: cover; 
+  margin: 0 auto;   
+    }
+
 
     .navigation {
       text-align: center;
@@ -696,6 +708,8 @@ body {
    nav {
   background-color: #bdbcf3; 
   padding: 20px 0;
+  width: 100%;
+  box-sizing: border-box;
  }
 
 .navbar {
@@ -723,6 +737,7 @@ body {
   color: #007bff;        
 }
 
+
 .first{
   display: flex;
   justify-content: space-evenly;
@@ -730,30 +745,87 @@ body {
   
 }
 
-.nombre{
-  font-family: "Bitcount Grid Single", system-ui;
-    font-optical-sizing: auto;
-
+header {
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
-.header-redes {
-  position: absolute;
-  top: 10px;
-  right: 20px;
+.header-container {
   display: flex;
-  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0px 40px;
+  box-sizing: border-box;
 }
 
-.logo-redes img {
+
+.container-restaurante {
+  width: 90%;
+  max-width: 1200px;
+  margin: 50px auto;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.container h1 {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+
+.restaurants {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 30px;
+  flex-wrap: wrap; 
+ }
+
+.restaurant {
+  background-color: rgb(205, 207, 216);
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
   transition: transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
-.logo-redes img:hover {
-  transform: scale(1.2);
+.restaurant:hover {
+  transform: scale(1.05);
 }
 
+.restaurant img {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
 
+.restaurant h2 {
+  margin: 0;
+  font-size: 18px;
+}
 
+.restaurant p {
+  margin-top: 8px;
+  color: #555;
+  font-size: 14px;
+}
+
+.nombre{
+    font-family: "Bitcount Grid Single", system-ui;
+}
 
 
     :root {
@@ -777,5 +849,52 @@ html, body {
     background-color: #cecdfa;
     color: #000000;
     filter: none;
+    margin: 0;
+    padding: 0;
+  }
+  }
+
+  .logo{
+    width: 60px;
+    height: 60px;
+  }
+
+  /* Tablet */
+@media (max-width: 900px) {
+  .header-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  nav ul {
+    gap: 20px;
+  }
+}
+
+/* Celular */
+@media (max-width: 600px) {
+  .header-container {
+    flex-direction: column;
+    padding: 10px 20px;
+  }
+
+  .header-right {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .header-center img {
+    height: 45px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav a {
+    display: block;
+    padding: 10px;
   }
 }
